@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:label="ADB"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".AdbActivity">
+
+    <TextView
+        android:id="@+id/adbLog"
+        android:layout_width="314dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAdb"
+        android:layout_width="202dp"
+        android:layout_height="74dp"
+        android:text="start"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/memutils"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adbLog" />
+
+    <Button
+        android:id="@+id/memutils"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:text="Memory Utils"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdb" />
+</android.support.constraint.ConstraintLayout>

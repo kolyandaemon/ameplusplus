@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:keepScreenOn="true"
+    android:visibility="visible"
+    tools:context=".MemUtils">
+
+    <Button
+        android:id="@+id/amex"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:text="AMExtrator"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/amexdump"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bootimg" />
+
+    <Button
+        android:id="@+id/bootimg"
+        android:layout_width="341dp"
+        android:layout_height="64dp"
+        android:text="Get Boot Image"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/amex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Button
+        android:id="@+id/amexdump"
+        android:layout_width="307dp"
+        android:layout_height="61dp"
+        android:text="dump"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/amexlog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amex" />
+
+    <TextView
+        android:id="@+id/amexlog"
+        android:layout_width="341dp"
+        android:layout_height="223dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical"
+        android:text="log:"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="347dp"
+        android:layout_height="53dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</android.support.constraint.ConstraintLayout>
